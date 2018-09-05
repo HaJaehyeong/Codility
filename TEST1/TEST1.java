@@ -26,13 +26,13 @@ class Solution {
 		
 		// 重複除去
 		HashSet<Integer> distinctList = new HashSet<Integer>(list);
-        list = new ArrayList<Integer>(distinctList);
+        	list = new ArrayList<Integer>(distinctList);
         
-        // ソート、昇順
+        	// ソート、昇順
 		Ascending ascending = new Ascending();
-        Collections.sort(list, ascending);
+        	Collections.sort(list, ascending);
 
-        // ない数探し
+        	// ない数探し
 		for (int i = 0 ; i < this.list.size() ; i++) {
 			if (this.list.get(i) != i+1) {
 				return i+1;			
